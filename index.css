@@ -1,0 +1,346 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+@media (max-width: 767px) {
+    .resolucionpc{
+        display: none;
+    }
+}
+h1{
+	font-family: "Meow Script",Arial, Helvetica, sans-serif;
+	font-size: 300px;
+	color: rgb(0, 3, 191);
+
+}
+.container{
+	background-image: url(imagenes/siamese-cat-5320568_1920.jpg);
+	width: 1906px;
+	height: 790px;
+	right: 20px;
+}
+	
+
+
+.container:hover {
+    filter: blur(3px);
+}
+
+
+.tracking-in-contract-bck  {
+-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@-webkit-keyframes tracking-in-contract-bck {
+0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+}
+}
+@keyframes tracking-in-contract-bck {
+0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+}
+}
+
+
+
+body{
+	background-image: url(imagenes/anime-girl-silhouette-sunrise-scenery-hd-wallpaper-uhdpaper.com-25@0@h.jpg);
+	height: 5000px;
+	
+}
+
+
+#subtitulo{
+	color: #fff;
+	position: absolute;
+	top: 330px;
+	left: 20%;
+}
+
+
+
+.wrapper{
+position: absolute;
+top: 65%;
+left: 10%;
+transform: translate(-50%, -50%);
+}
+
+.apps{
+display: block;
+width: 200px;
+height: 40px;
+line-height: 40px;
+font-size: 18px;
+font-family: sans-serif;
+text-decoration: none;
+color: #333;
+border: 2px solid #333;
+letter-spacing: 2px;
+text-align: center;
+position: relative;
+transition: all .35s;
+}
+
+.apps span{
+position: relative;
+z-index: 2;
+}
+
+.apps:after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #004cff;
+transition: all .35s;
+}
+
+
+
+.apps:hover{
+color: #fff;
+}
+
+.apps:hover:after{
+width: 100%;
+}
+.wrapper_1{
+position: absolute;
+top: 75%;
+left: 10%;
+transform: translate(-50%, -50%);
+
+}
+.wrapper_2{
+position: absolute;
+top: 70%;
+left: 10%;
+transform: translate(-50%, -50%);
+;
+}
+
+
+
+.dropbtn {
+background-color: #000000;
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown {
+position: absolute;
+left: 92%;
+top:1px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #020202;
+min-width: 200px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+color: rgb(7, 31, 244);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #0e20e6;
+}
+
+.collage_de_imagenes{
+	position: relative;
+	top: 110%;
+	width: 90%;
+	max-width: 1100px;
+	margin: 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit , minmax(280px ,1fr))
+
+
+}
+.collage_de_imagenes :hover{
+	box-shadow: 0 0 40px rgb(140, 133, 133);
+}
+img{
+	width: 100%;
+	object-fit: cover;
+	
+}
+.collage_de_imagenes img{
+	height: 100%;
+}
+
+.boton_de_imagines {
+padding: 40px 48%;
+background-color:rgba(0,0,0,0.30);
+color: white;
+border: 5px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.boton_de_imagines:hover {
+background-color: rgb(84, 6, 157) ;
+}
+
+.boton_de_imagines:active {
+background-color:  rgb(84, 6, 157);
+}
+
+
+.bounce-top {
+-webkit-animation: bounce-top 0.9s both;
+animation: bounce-top 0.9s both;
+}
+
+@-webkit-keyframes bounce-top {
+0% {
+-webkit-transform: translateY(-45px);
+transform: translateY(-45px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+opacity: 1;
+}
+24% {
+opacity: 1;
+}
+40% {
+-webkit-transform: translateY(-24px);
+transform: translateY(-24px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+65% {
+-webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+-webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+}
+82% {
+-webkit-transform: translateY(-6px);
+transform: translateY(-6px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+93% {
+-webkit-transform: translateY(-4px);
+transform: translateY(-4px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+25%,
+55%,
+75%,
+87% {
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+100% {
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+opacity: 1;
+}
+}
+@keyframes bounce-top {
+0% {
+-webkit-transform: translateY(-45px);
+transform: translateY(-45px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+opacity: 1;
+}
+24% {
+opacity: 1;
+}
+40% {
+-webkit-transform: translateY(-24px);
+transform: translateY(-24px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+65% {
+-webkit-transform: translateY(-12px);
+transform: translateY(-12px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+82% {
+-webkit-transform: translateY(-6px);
+transform: translateY(-6px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+93% {
+-webkit-transform: translateY(-4px);
+transform: translateY(-4px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+25%,
+55%,
+75%,
+87% {
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+100% {
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+opacity: 1;
+}
+}
